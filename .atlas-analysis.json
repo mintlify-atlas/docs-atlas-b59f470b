@@ -1,0 +1,83 @@
+{
+  "projectType": "cli-tool",
+  "projectName": "Uzi",
+  "projectDescription": "CLI for running large numbers of coding agents in parallel with git worktrees",
+  "theme": "aspen",
+  "primaryColor": "#ffffff",
+  "lightColor": null,
+  "darkColor": null,
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": ["introduction", "installation", "quickstart"]
+          },
+          {
+            "group": "Configuration",
+            "pages": ["configuration/overview", "configuration/uzi-yaml"]
+          },
+          {
+            "group": "Workflows",
+            "pages": [
+              "workflows/basic-workflow",
+              "workflows/parallel-agents",
+              "workflows/monitoring-agents",
+              "workflows/merging-changes"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/prerequisites",
+              "guides/worktrees",
+              "guides/tmux-sessions",
+              "guides/troubleshooting"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Command Reference",
+        "groups": [
+          {
+            "group": "Commands",
+            "pages": [
+              "commands/overview",
+              "commands/prompt",
+              "commands/ls",
+              "commands/auto",
+              "commands/broadcast",
+              "commands/checkpoint",
+              "commands/run",
+              "commands/kill",
+              "commands/reset"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Run multiple AI coding agents in parallel",
+    "Automatic Git worktree management for isolated development",
+    "Tmux session management for each agent",
+    "Automatic development server setup with port management",
+    "Real-time monitoring of agent status and code changes",
+    "Automatic handling of agent prompts and confirmations",
+    "Easy checkpoint and merge of agent changes",
+    "Broadcast messages to all agents"
+  ],
+  "publicApiSurface": [
+    "uzi prompt (alias: p) - Create new agent sessions with prompts",
+    "uzi ls (alias: l) - List active agent sessions with status",
+    "uzi auto (alias: a) - Auto-handle prompts and confirmations",
+    "uzi broadcast (alias: b) - Send messages to all agents",
+    "uzi checkpoint (alias: c) - Rebase and commit agent changes",
+    "uzi run (alias: r) - Execute commands in all agents",
+    "uzi kill (alias: k) - Terminate agent sessions",
+    "uzi reset - Remove all Uzi data and configuration"
+  ]
+}
